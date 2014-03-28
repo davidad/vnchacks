@@ -12,7 +12,7 @@ specification, so any conforming viewer should work.
 
     $ make
     $ ./color_rotate_zrle &
-    $ vncviewer localhost:4092
+    $ vncviewer localhost::4092
 
 Future work:
 * Split out encoding to a `send_rect` function
