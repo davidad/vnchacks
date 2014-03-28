@@ -3,12 +3,13 @@ Using VNC as a graphics library
 
 VNC's protocol, Remote Frame Buffer (RFB) is a fairly sane way to stream
 graphics and to receive keyboard and mouse events. A graphical application can
-theoretically be implemented as an RFB server. This is a simple demo of how
-such an app would work. Currently, it doesn't accept any input, but just
-streams frames of a solid color rotating through the HCL color space (which I
-devised and implemented for other projects). I also haven't tested it with many
-implementations of VNC, but to my knowledge it conforms to the RFB 3.3
-specification, so any conforming viewer should work.
+theoretically be implemented as an RFB server, using no libraries except `libc`
+and `libz`. This is a simple demo of how such an app would work. Currently, it
+doesn't accept any user input, but just streams frames of a solid color
+rotating through the HCL color space (which I devised and implemented for other
+projects). I also haven't tested it with many implementations of VNC, but to my
+knowledge it conforms to the RFB 3.3 specification, so any conforming viewer
+should work.
 
     $ make
     $ ./color_rotate_zrle &
