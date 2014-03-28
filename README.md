@@ -10,9 +10,9 @@ devised and implemented for other projects). I also haven't tested it with many
 implementations of VNC, but to my knowledge it conforms to the RFB 3.3
 specification, so any conforming viewer should work.
 
-   $ make
-   $ ./color_rotate_zrle &
-   $ vncviewer localhost:4092
+    $ make
+    $ ./color_rotate_zrle &
+    $ vncviewer localhost:4092
 
 Future work:
 * Split out encoding to a `send_rect` function
