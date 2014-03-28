@@ -72,7 +72,7 @@ int main() {
     write(connfd,fbuf_refresh,sizeof(fbuf_refresh));
     write(connfd,&length,4);
     write(connfd,buf,z->total_out);
-    usleep(1e6/60);
+    usleep(1e6/30);
   }
 
   unsigned char rb[1], i;
