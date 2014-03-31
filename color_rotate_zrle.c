@@ -78,7 +78,6 @@ int main() {
     z->total_out=0;
     deflate(z,Z_SYNC_FLUSH);
     int length = htonl(z->total_out);
-    printf("h=%lf\n",h);
     write(connfd,fbuf_refresh,sizeof(fbuf_refresh));
     write(connfd,&length,4);
     write(connfd,buf,z->total_out);
